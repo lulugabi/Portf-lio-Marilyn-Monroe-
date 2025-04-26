@@ -1,32 +1,26 @@
 document.addEventListener('DOMContentLoaded', function(){
-
-const botaoDeAcessibilidade = document.getElementById('botao-acessibilbotao-acessibilidade
-
-const opcoesDeAcessibilidade = document.getElementById('opcoes-acessiopcoes-acessibilidade
+const botaoDeAcessibilidade = document.getElementById('botao-acessibilbotao-acessibilidadebotao-acessibilbotao-acessibilidade')
+const opcoesDeAcessibilidade = document.getElementById('opcoes-acessiopcoes-acessibilidade')
 
 botaoDeAcessibilidade.addEventListener('click', function (){
-
 cessibilidade.classList.toggle('rotacao-botao');
-
 opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
 
-const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-exp botaoDeAcessibilidade.setAttribute('aria-expanded', ! botaoSelecionado
+const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
 
 })
 
 const aumentaFonteBotao = document.getElementById('aumentar-fonte');
-
-const diminui FonteBotao = document.getElementById('diminuir-fonte');
+const diminuiFonteBotao = document.getElementById('diminuir-fonte');
 
 const alternaContraste = document.getElementById('alterna-contraste')
 
 let tamanhoAtualFonte = 1;
 
 aumentaFonteBotao.addEventListener('click', function(){
-
 tamanhoAtualFonte += 0.1;
-
-document.body.style.fontSize = `${tamanhoAtualFonte} rem`4
+document.body.style.fontSize = `${tamanhoAtualFonte} rem`
 })
 
 diminuiFonteBotao.addEventListener('click', function(){
@@ -42,6 +36,8 @@ alternaContraste.addEventListener('click', function(){ document.body.classList.t
 })
 
 ScrollReveal().reveal('#inicio', { delay: 500 });
+
+ScrollReveal().reveal('#sobre', { delay: 500 });
 
 ScrollReveal().reveal('#tropicalia', { delay: 500 });
 
