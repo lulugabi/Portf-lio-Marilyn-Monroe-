@@ -30,20 +30,6 @@ links.forEach(link => {
                                             form.reset();
                                             });
 
-                                            {
-                                            // Funções de acessibilidade
-                                            const btnAumentarFonte = document.getElementById('aumentar-fonte');
-                                            const btnContraste = document.getElementById('modo-contraste');
-
-                                            btnAumentarFonte.addEventListener('click', function() {
-                                                document.body.classList.toggle('fonte-grande');
-                                                });
-
-                                                btnContraste.addEventListener('click', function() {
-                                                    document.body.classList.toggle('alto-contraste');
-                                                    });
-
-}
 
 
 const aumentaFonteBotao = document.getElementById('aumentar-fonte');
