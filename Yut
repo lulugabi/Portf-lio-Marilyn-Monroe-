@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Marilyn Monroe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="fs-4 fw-bold">Marilyn Monroe</h1>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-3">
+
+        <section id="inicio" class="my-3">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h2 class="display-6 text-white fst-italic fw-bold">Bem-vindo ao universo de</h2>
+                    <h1 class="text-white fw-bold" style="font-size: 3rem;">Marilyn Monroe</h1>
+                    <a href="#sobre" class="btn btn-primary btn-lg botao-inicio fw-semibold mt-3">Conheça mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="my-3 pt-4 secao-tropicalia">
+            <div class="container d-flex align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>Quem foi Marilyn Monroe?</h2>
+                    <p class="p-2">Marilyn Monroe foi uma das atrizes mais icônicas do século 20, conhecida por sua beleza, carisma e talento. Nascida como Norma Jeane Mortenson em 1926, ela se destacou em Hollywood nos anos 1950 e início dos anos 1960, estrelando filmes como "Os Homens Preferem as Loiras" e "O Pecado Mora ao Lado". Além de atriz, também foi cantora e símbolo da revolução sexual da época. Sua morte precoce em 1962 a transformou em lenda e objeto de culto cultural.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-4">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 mb-3">
+                        <img src="img/marilyn1.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="img/marilyn2.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-3 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Site fictício criado para fins educacionais.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
